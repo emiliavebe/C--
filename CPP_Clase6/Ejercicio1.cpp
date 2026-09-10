@@ -41,14 +41,14 @@ int main(){
     int edades[8];
     int i, buscando, posicion;
 
-    posicion= -1;
+    posicion= 0;
 
     bool encontrado = false;
 
     for(i= 0; i < 8; i++){
 
         cout << "Ingrese edad " << i + 1 << ": ";
-        cin >> edades[8]; 
+        cin >> edades[i]; 
     }
 
     cout << endl;
@@ -58,7 +58,20 @@ int main(){
     for (i = 0; i < 8; i++){
 
         cout << "Posicion " << i << " : " << edades[i] << endl;
+
     }
+
+    
+
+
+    if (encontrado == false)
+    {
+        cout << "No se encontro el numero." << endl;
+    }else {
+
+        cout << "Numero encontrado." << endl;
+    }
+    
 
     return 0;
 }
