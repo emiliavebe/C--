@@ -25,7 +25,7 @@ Proceso:
         Si la edad fue encontrada, mostrar "Edad encontrada." y mostrar la posicion
         de la primera coincidencia.
 
-        Si no, mostrar "Edad no encontrada."
+        Si no, mostrar "Edad no encontrada en el arreglo."
 
 Salida: 
     - Mostrar las edades registradas y sus posiciones.
@@ -39,17 +39,20 @@ using namespace std;
 int main(){
 
     int edades[8];
-    int i, posicion, buscado, Numadicional;
+    int i;
+    int  Edadicional;
+    bool encontrado;
+    int PosicionEncontrada;
 
-    posicion= -1;
 
-    bool encontrado = false; 
 
     for(i= 0; i < 8; i++){
 
         cout << "Ingrese edad " << i + 1 << ": ";
         cin >> edades[i]; 
+
     }
+    cout << endl;
 
     cout << "EDADES REGISTRADAS:" << endl;
     cout << endl;
@@ -62,26 +65,29 @@ int main(){
     cout << endl;
 
     cout << "Ingrese una edad adicional: ";
-    cin >> Numadicional;
+    cin >> Edadicional;
+
+    encontrado = false;
+    PosicionEncontrada = -1;
 
     for (int i = 0; i < 8; i++)
     {
-        if (edades[i] == buscado && encontrado == false )
-     {
-        encontrado= true;
-        posicion= i;
-     
-     }
+      if (edades[i] == Edadicional)
+    {
+       encontrado = true;
+       PosicionEncontrada = i;
+       break;
+    }
 
     }
 
     cout << endl;
 
-    if (encontrado == true)
+    if (encontrado)
     {
-        cout << "Edad encontrada." << posicion << endl;
+        cout << "Edad encontrada en la posición: " << PosicionEncontrada << endl;
     }else {
-        cout << "Edad no encontrada." << endl;
+        cout << "Edad no encontrada en el arreglo." << endl;
     }
     
     return 0;
