@@ -18,19 +18,19 @@ Entrada:
 
 Proceso: 
 
-    - Leer edades
-    - Verificar que N sea mayor a cero
-    - Si no lo es, mostrar un mensaje de error
-    - Si lo es, usar un contador que inicie en 1
-    - Repetir mientras el contador sea menor o igual a N
-    - Mostrar el valor del contador 
+    - Ingresar 8 edades enteras.
+    - Leer las 8 edades y mostrar las posiciones en las que fueron guardadas.
+    - Pedir una edad adicional
+
+        Si la edad fue encontrada, mostrar "Edad encontrada." y mostrar la posicion
+        de la primera coincidencia.
+
+        Si no, mostrar "Edad no encontrada."
 
 Salida: 
-    - Mostrar "ERROR" si el usuario ingresa un valor <= 0.
-
-    SiNo
-    - Mostrar todos los números pares desde 1 hasta N.
-
+    - Mostrar las edades registradas y sus posiciones.
+    - Mostrar si la edad adicional fue encontrada y la posicion en la que se guardo.
+    - o Mostar que no se encontro esa edad.
 */
 
 #include <iostream>
@@ -39,11 +39,11 @@ using namespace std;
 int main(){
 
     int edades[8];
-    int i, buscando, posicion;
+    int i, posicion, buscado, Numadicional;
 
-    posicion= 0;
+    posicion= -1;
 
-    bool encontrado = false;
+    bool encontrado = false; 
 
     for(i= 0; i < 8; i++){
 
@@ -51,27 +51,38 @@ int main(){
         cin >> edades[i]; 
     }
 
+    cout << "EDADES REGISTRADAS:" << endl;
     cout << endl;
-
-    cout << "Edades registradas:" << endl;
 
     for (i = 0; i < 8; i++){
 
-        cout << "Posicion " << i << " : " << edades[i] << endl;
+        cout << "Posición " << i << " : " << edades[i] << endl;
 
     }
+    cout << endl;
 
-    
+    cout << "Ingrese una edad adicional: ";
+    cin >> Numadicional;
 
-
-    if (encontrado == false)
+    for (int i = 0; i < 8; i++)
     {
-        cout << "No se encontro el numero." << endl;
-    }else {
+        if (edades[i] == buscado && encontrado == false )
+     {
+        encontrado= true;
+        posicion= i;
+     
+     }
 
-        cout << "Numero encontrado." << endl;
+    }
+
+    cout << endl;
+
+    if (encontrado == true)
+    {
+        cout << "Edad encontrada." << posicion << endl;
+    }else {
+        cout << "Edad no encontrada." << endl;
     }
     
-
     return 0;
 }
