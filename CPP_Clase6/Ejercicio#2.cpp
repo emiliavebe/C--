@@ -21,17 +21,17 @@ Proceso:
 
     - Ingresar 6 cantidades enteras.
     - Leer las 6 cantidades y mostrar las posiciones en las que fueron guardadas.
-    - Pedir una edad adicional
-
-        Si la edad fue encontrada, mostrar "Edad encontrada." y mostrar la posicion
+    - Pedir una cantidad especifica
+d 
+        Si cantidad especifica fue encontrada, mostrar "Cantidad encontrada." y mostrar la posicion
         de la primera coincidencia.
 
-        Si no, mostrar "Edad no encontrada."
+        Si no, mostrar "Cantidad no encontrada en el arreglo."
 
 Salida: 
-    - Mostrar las edades registradas y sus posiciones.
-    - Mostrar si la edad adicional fue encontrada y la posicion en la que se guardo.
-    - o Mostar que no se encontro esa edad.
+    - Mostrar las cantidades registradas y sus posiciones.
+    - Mostrar si la cantidad especifica fue encontrada y la posicion en la que se guardo.
+    - o Mostar que no se encontro esa cantidad.
 
 */
 

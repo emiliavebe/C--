@@ -14,7 +14,7 @@ E/P/S
 
 Entrada: 
 
-    - 8 edades.
+    - Ingresar 8 edades.
 
 Proceso: 
 
