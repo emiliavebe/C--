@@ -1,6 +1,6 @@
 /*
 
-EJERCICIO 1: Suma y promedio de 3 numeros.
+EJERCICIO 2: Número mayor entre dos valores.
 
 Autor: Emilia Veloz 
 
@@ -8,12 +8,12 @@ Fecha: 11/09/2026
 
 ENUCIADO: 
 
-    Desarrolle un programa en C++ que permita ingresar 3 números enteros y que use funciones
-    para:
-    • leer los números,
-    • calcular la suma,
-    • calcular el promedio,
-    • mostrar los resultados.
+   Desarrolla un programa que permita ingresar dos números enteros y determine cuál
+   de los dos es mayor.
+   El programa debe estar modularizado usando funciones para:
+    • leer los datos,
+    • comparar los valores,
+    • mostrar el resultado.
   
 E/P/S
 
