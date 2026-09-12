@@ -63,11 +63,11 @@ void ComparardosNumeros(int num1, int num2){
     }else if (num1 > num2)
     {
 
-        cout << num1 << "Es mayor que " << num2 << endl;
+        cout << num1 << " es mayor que " << num2 << endl;
 
     }else{
 
-        cout << num2 << "Es mayor que " << num1 << endl;
+        cout << num2 << " es mayor que " << num1 << endl;
     }
        
 }
