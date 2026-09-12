@@ -63,7 +63,7 @@ int main(){
 
 void LeerTresNumeros(int &a, int &b, int &c){
 
-    cout << "Ingrese 3 numeros enteros: ";
+    cout << "Ingrese 3 números enteros: ";
     cin >> a >> b >> c;
 }
 
@@ -77,7 +77,7 @@ double calcularPromedio(int suma){
 
 void MostrarResultados(int suma, double promedio){
     cout << "RESULTADOS:" << endl;
-    cout << "Suma: " << suma;
-    cout << "Promedio: " << promedio;
+    cout << "Suma: " << suma << endl;
+    cout << "Promedio: " << promedio << endl;
 
 }
