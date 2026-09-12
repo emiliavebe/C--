@@ -35,6 +35,10 @@ Salida:
 #include <iostream>
 using namespace std;
 
+// PROTOTIPADO O FIRMA DE FUNCIONES
+
+
+
 int main(){
 
     int num1, num2, num3;
@@ -42,7 +46,7 @@ int main(){
     int suma;
     double promedio;
 
-    leerTresNumeros(num1, num2, num3);
+    LeerTresNumeros(num1, num2, num3);
 
     suma = calcularSuma(num1, num2, num3);
 
@@ -70,5 +74,5 @@ void MostrarResultados(int suma, double promedio){
     cout << "RESULTADOS:" << endl;
     cout << "Suma: " << suma;
     cout << "Promedio: " << promedio;
-    
+
 }
