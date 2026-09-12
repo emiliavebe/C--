@@ -23,13 +23,14 @@ Entrada:
 
 Proceso: 
 
-    - 
+    - Leer 3 numeros.
+    - Calcular suma.
+    - Calcular promedio.
+    - Mostrar resultados (suma y promedio).
 
 Salida: 
-    - Mostrar las edades registradas y sus posiciones.
-    - Mostrar si la edad adicional fue encontrada y la posicion en la que se guardo.
-    - o Mostar que no se encontro esa edad.
-
+    - Suma de 3 numeros.
+    - Promedio de los 3 numeros.
 */
 
 #include <iostream>
@@ -37,6 +38,10 @@ using namespace std;
 
 // PROTOTIPADO O FIRMA DE FUNCIONES
 
+void LeerTresNumeros(int &a, int &b, int &c);
+int calcularSuma(int a, int b, int c);
+double calcularPromedio(int suma);
+void MostrarResultados(int suma, double promedio);
 
 
 int main(){
