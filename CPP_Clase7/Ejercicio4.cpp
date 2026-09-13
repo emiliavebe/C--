@@ -83,7 +83,7 @@ void Intercambiar(int &x, int &y){
 
 void MostrarIntercambio(int num1, int num2){
 
-    cout << "***Valores despues del intercambio***" << endl;
+    cout << "***Valores despúes del intercambio***" << endl;
     cout << endl;
     cout << "Número 1: " << num1 << endl;
     cout << "Número 2: " << num2 << endl;
