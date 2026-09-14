@@ -61,7 +61,7 @@ void ContarYmostrar(int n, int &contador){
         contador = i;
         cout << "CONTADOR:";
         cout << endl;
-        cout << contador;
+        cout << contador<< endl;
 
     }
         
