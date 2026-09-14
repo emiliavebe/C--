@@ -1,6 +1,6 @@
 /*
 
-EJERCICIO 5: Intercambio de dos números.
+EJERCICIO 5: Contador actualizado con referencia.
 
 Autor: Emilia Veloz 
 
@@ -16,24 +16,27 @@ E/P/S
 
 Entrada: 
 
-    - 1 numero entero positivo.
+    - 1 numero entero positivo n.
 
 Proceso: 
 
-    - Leer los 2 numeros enteros.
-    - Mostrar los 2 valores.
-    - Hacer un intercambio de valores.
-    - Mostrar los valores despues del intercambio.
+    - Leer el numero entero n.
+    - Incrementar un contador desde 0 a n.
+    - Usar una funcion que actualice el valor del contador.
 
 Salida: 
 
-    - Valores ingresados.
-    - Valores intercambiados.
-
+    - Mostrar el valor del contador en cada incremento.
 */
 
 #include <iostream>
 using namespace std;
+
+//PROTOTIPADO
+
+void Leer_n(int &n);
+void ContarYmostrar(int n, int &contador);
+
 
 int main(){
 
@@ -41,24 +44,25 @@ int main(){
     contador = 0;
 
     Leer_n(n);
-    MostrarContador(n, contador);
-
+    ContarYmostrar(n, contador);
 
 }
 
 void Leer_n(int &n){
 
-    cout << "Ingrese un numero entero positivo: ";
+    cout << "Ingrese un número entero positivo: ";
     cin >> n;
 }
 
-void MostrarContador(int &n, int contador){
+void ContarYmostrar(int n, int &contador){
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n; i++)
     {
-        contador++;
+        contador = i;
+        cout << "CONTADOR:";
+        cout << endl;
         cout << contador;
 
     }
-
+        
 }
